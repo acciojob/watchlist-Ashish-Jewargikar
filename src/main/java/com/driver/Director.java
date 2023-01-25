@@ -7,7 +7,15 @@ public class Director {
 
     public Director() {}
 
-    public Director(String name, int numberOfMovies, double imdbRating) {
+    public double getImdbRating() {
+		return imdbRating;
+	}
+
+	public void setImdbRating(double imdbRating) {
+		this.imdbRating = imdbRating;
+	}
+
+	public Director(String name, int numberOfMovies, double imdbRating) {
         this.name = name;
         this.numberOfMovies = numberOfMovies;
         this.imdbRating = imdbRating;
